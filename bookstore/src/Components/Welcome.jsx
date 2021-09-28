@@ -1,20 +1,25 @@
-import Jumbotron from "react-bootstrap/jumbotron"
-import Button from "react-bootstrap/button"
-import { propTypes } from "react-bootstrap/esm/Image"
+import Jumbotron from "react-bootstrap/jumbotron";
+import Button from "react-bootstrap/button";
+import { propTypes } from "react-bootstrap/esm/Image";
+import { Container } from "react-bootstrap";
 
+const Welcome = (props) => (
+  <Container id="jumbotron">
+    <br />
+    <Jumbotron
+      style={{
+        color: "black",
+        marginTop: "50px",
+        boxShadow: "5px 10px 18px #888888",
+      }}
+    >
+      <h1>Hello, {props.greetingsName}!</h1>
+      <p>{props.subTitle}</p>
 
-const Welcome =(props) => (
+      <Button variant="info">Learn more</Button>
+    </Jumbotron>
+    <br />
+  </Container>
+);
 
-<Jumbotron style={{color: "black"}}>
-  <h1>Hello, {props.greetingsName}!</h1>
-  <p>
-    {props.subTitle}
-  </p>
-  
-    <Button variant="primary">Learn more</Button>
-  
-</Jumbotron>
-
-)
-
-export default Welcome
+export default Welcome;

@@ -1,18 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import MyNav from './Components/MyNav';
 import MyFoot from './Components/MyFoot';
 import Welcome from './Components/Welcome';
+import LatestRelease from './Components/LatestRelease';
+
+
+
 
 function App() {
+  
+  // console.log("string")
   return (
-    <div className="App">
-      <MyNav title="b00ks = &#9829;" />
-      <header className="App-header">
-        <Welcome greetingsName = "bööks" subTitle = "This is the greatest shop for books comrades!"/>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div>
+      <MyNav title="b00ks =  	
+&#128155;" />
+    <div>
+        <Welcome greetingsName = "b00ks" subTitle = "This is a great place for books comrade!"/>
+        </div> 
+        <LatestRelease />  
+    
       <MyFoot />
     </div>
   );
